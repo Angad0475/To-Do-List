@@ -1,0 +1,256 @@
+body{
+    background-color:hsl(0,0%,10%);
+}
+.to-do-list{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+h1{
+    font-size: 4rem;
+    color:white;
+}
+button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding:10px 20px;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    
+}
+.add-button{
+    background-color: hsl(125,47%,54%);
+    position:relative;
+    left:10px;
+}
+.add-button:hover{
+    background-color:hsl(125,47%,44%);
+}
+.delete-button{
+    background-color:hsl(10,90%,50%);
+}
+.delete-button:hover{
+    background-color: hsl(10,90%,40%);
+}
+.move-button{
+    background-color:hsl(207,90%,64%);
+}
+.move-button:hover{
+  background-color: hsl(207,90%,54%);
+}
+
+input[type="text"]{
+    font-size:1.6rem;
+    padding:10px;
+    border:2px solid hsla(0,0%,80%,0.5);
+    border-radius: 5px;
+    color: hsl(0,0%,0%);
+}
+ol{
+    padding: 0;
+    width:570px;
+    margin-left:475px;
+    height:450px;
+    overflow-y: scroll;
+}
+ol::-webkit-scrollbar{
+    width:2px;
+}
+li{
+    font-size:2rem;
+    font-weight: bold;
+    padding:15px;
+    background-color: hsl(0,0%,97%);
+    margin-bottom: 10px;
+    border:3px solid hsla(0,0%,85%,0.75);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.text{
+    flex: 1;
+}
+.delete-button,.move-button{
+    padding: 8px 12px;
+    font-size:1.4rem;
+    margin-left:10px;
+}
+.to-do-list::-webkit-scrollbar{
+    width:3px;
+}
+@media (max-width:380px) and (min-width:320px){
+    .to-do-list{
+        width:100%;
+        margin-left:0;
+    }
+    .add-button{
+        position:relative;
+        top:10px;
+    }
+    ol{
+        width:100%;
+        margin-left:0;
+        height:350px;
+    }
+    li{
+        font-size:1.6rem;
+    }
+    .text{
+        flex: 1;
+    }
+    .delete-button,.move-button{
+        padding: 8px 12px;
+        font-size:1.4rem;
+        margin-left:10px;
+    }
+
+}
+
+@media (max-width:420px) and (min-width:380px){
+    .to-do-list{
+        width:100%;
+        margin-left:0;
+        margin-top:50px;
+        
+    }
+    ol{
+        width:100%;
+        margin-left:0;
+        height:420px;
+        margin-top:20px;
+    }
+    .add-button{
+        position:relative;
+        top:10px;
+    }
+    li{
+        font-size:1.5rem;
+        padding:10px;
+    }
+    .text{
+        flex: 1;
+    }
+    .delete-button,.move-button{
+        padding: 5px 8px;
+        font-size:1.2rem;
+        margin-left:5px;
+    }
+}
+@media (max-width:550px) and (min-width:430px){
+    .to-do-list{
+        width:100%;
+        margin-left:0;
+        margin-top:50px;
+    }
+    ol{
+        width:100%;
+        margin-left:0;
+    }
+
+}
+@media (max-width:640px) and (min-width:550px){
+    .to-do-list{
+        width:100%;
+        margin-left:0;
+        margin-top:50px;
+    }
+    ol{
+        width:100%;
+        margin-left:0;
+        height:460px;
+        margin-top:20px;
+    }
+    .text{
+        flex: 1;
+    }
+    .delete-button,.move-button{
+        padding: 8px 12px;
+        font-size:1.4rem;
+        margin-left:10px;
+    }
+    li{
+        font-size:1.8rem;
+        padding:10px;
+    }
+}
+@media (max-width:768px)and (min-width:650px){
+    .to-do-list{
+        width:100%;
+        margin-left:0;
+        margin-top:50px;
+    }
+    ol{
+        width:100%;
+        margin-left:0;
+        height:660px;
+        margin-top:20px;
+    }
+    .text{
+        flex: 1;
+    }
+    .delete-button,.move-button{
+        padding: 8px 12px;
+        font-size:1.4rem;
+        margin-left:10px;
+    }
+    li{
+        font-size:1.8rem;
+        padding:10px;
+    }
+}
+
+@media (max-width:1024px) and (min-width:770px){
+    .to-do-list{
+        width:100%;
+        margin-left:0;
+        margin-top:50px;
+    }
+    ol{
+        width:100%;
+        margin-left:0;
+        height:960px;
+        margin-top:20px;
+    }
+    .text{
+        flex: 1;
+    }
+    .delete-button,.move-button{
+        padding: 8px 12px;
+        font-size:1.4rem;
+        margin-left:10px;
+    }
+    li{
+        font-size:1.8rem;
+        padding:10px;
+    }
+}
+@media (max-width:1280px ) and (min-width:1180px){
+    .to-do-list{
+        width:100%;
+        margin-left:0;
+        margin-top:50px;
+    }
+    ol{
+        width:100%;
+        margin-left:0;
+        height:500px;
+        margin-top:20px;
+    }
+    .text{
+        flex: 1;
+    }
+    .delete-button,.move-button{
+        padding: 8px 12px;
+        font-size:1.4rem;
+        margin-left:10px;
+    }
+    li{
+        font-size:1.8rem;
+        padding:10px;
+    }
+
+}
